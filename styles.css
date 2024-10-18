@@ -1,0 +1,123 @@
+@font-face {
+    font-family: 'NorseBold';
+    src: url('../fonts/Norse-Bold.otf') format('opentype');
+
+}
+
+
+body {
+    font-family: 'NorseBold', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* height: 100vh; */
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    background: rgb(2,0,36);
+    background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(72,9,121,1) 0%, rgba(0,212,255,1) 100%);
+}
+
+#game-container {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin: 200px;
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(180, 105, 231, 0) 20%, rgba(83, 169, 198, 0.98) 75%, rgb(109, 96, 233) 90%);    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#player-inputs {
+    margin-bottom: 20px;
+}
+
+#player-inputs input {
+    margin: 5px;
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-family: 'NorseBold', sans-serif;
+}
+
+#start-game {
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    background-color: #34d3d0;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    font-family: 'NorseBold', sans-serif;
+    
+}
+
+#start-game:hover {
+    background-color: #34e4e1;
+    transform: scale(1.05);
+    transform: translateY(-10px); /* Lifts the element */
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+#gameboard {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    gap: 5px;
+    margin-bottom: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+#gameboard div {
+    width: 100px;
+    height: 100px;
+    background: rgb(78,98,213);
+    background: radial-gradient(circle, rgba(78,98,213,0.88) 0%, rgba(71,237,235,0.85) 100%);
+    border: 1px solid #3d38da;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    font-family: 'NorseBold', sans-serif;
+    cursor: pointer;
+    user-select: none;
+}
+
+#gameboard div:hover {
+    background-color: #f1f1f1;
+}
+
+#controls {
+    margin-top: 10px;
+}
+
+#restart {
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    background-color: #7f0aa3;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    /* transition: background-color 0.3s ease, transform 0.3s ease; */
+    transition: transform 0.9s ease;
+    font-family: 'NorseBold', sans-serif;
+   
+}
+
+#restart:hover {
+    background-color: #bb48c3;
+    /* transform: scale(1.05); */
+    transform: rotateY(180deg);
+}
+
+#message {
+    margin-top: 12px;
+    font-size: 20px;
+    color: #f5f3f8;
+    font-family: 'NorseBold', sans-serif;
+}
